@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+*{
+
+    margin: 0;
+    padding: 0;
+    font-family: 'Abril Fatface', cursive;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+body{
+   height: 100vh;
+   background-color: black;
+  
+}
+
+.heads{
+    background-color: black;
+    position:absolute;
+    z-index: 50;
+    top:0px;
+  
+}
+.side-nav{
+    position: fixed ;
+    z-index: 1000; 
+    left: 0;
+    right: 0;
+   
+    animation:toShow 1s linear !important;
+}
+@keyframes toShow{
+    from{
+        transform: translateY(-200px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+.heads .nav-link{
+    padding: 5px 10px;
+}
+.nav-link.current-link{
+    border-bottom:2px solid #ffc107;
+   
+}
+
+.home{
+    background-color: black;
+}
+.left-bg{
+
+}
+.right-bg{
+   background-image: url('../img/final-my-photo.png');
+   background-size: 140%;
+    background-position: center;
+    background-repeat: no-repeat;
+ 
+}
+/*--------------------about start-----------------*/
+.about{
+    background-color: black;
+}
+.about-left{
+ 
+}
+.about-img{
+    
+}
+.about-header{
+    font-size:7vw;
+    position: absolute;
+    opacity: 0.1;
+    top:0px;
+    left: 0;
+
+}
+/*---------------------Resume----------------- */
+.Resume{
+    background-color: black;
+}
+.card{
+    background-color: rgb(37, 37, 37) !important;
+}
+.Resume .card{
+    transition: 0.5s;
+}
+.Resume .card:hover{
+    background-color: #9e9e9e2f !important;
+    transform: scale(1.01);
+}
+.Resume-header{
+    font-size:7vw;
+    position: absolute;
+    opacity: 0.1;
+    top:0px;
+    left: 400px;
+}
+/*---------------------Resume end----------------- */
+/*---------------------service-start----------------- */
+
+.services{
+    background-color: black !important;
+}
+.services-card{
+    transition: 0.5s;
+}
+
+.services-card:hover{
+    transform: scale(1.02);
+    background-color:#dfdc4a80  !important;
+    color: black !important;
+}
+/*---------------------service-end----------------- */
+.Skill-header{
+    font-size:7vw;
+    position: absolute;
+    opacity: 0.1;
+    top:0px;
+    left: 420px;
+}
+input{
+
+}
+::-webkit-input-placeholder{
+   color: #00000050 !important; 
+}
+.ani-delay-1{
+    animation-delay: 0.5s;
+
+}
+.ani-delay-2{
+    animation-delay: 1s;
+
+}
+.ani-delay-3{
+    animation-delay: 1.5s;
+
+}
+.ani-delay-4{
+    animation-delay: 2s;
+
+}
+.ani-delay-5{
+    animation-delay: 2.5s;
+
+}
+
+
+@media Only screen and (max-width:780px){
+    
+    .home{
+        
+        position: relative;
+        z-index: -2;
+    }
+   .right-bg{
+    background-size: 250%;
+    position: absolute;
+    z-index: -1;
+   
+}   
+.about-img{
+    width: 300px !important;
+    height: 600px;
+}
+.Resume-header{
+    font-size:10vw;
+    position: absolute;
+    opacity: 0.1;
+    top:0px;
+    left:200px;
+    right: auto;
+}
+.Skill-header{
+    font-size:10vw;
+    position: absolute;
+    opacity: 0.1;
+    top:0px;
+    left: 270px;
+}
+   .left-bg{
+    margin-top: 250px;
+   }
+   .navbar-toggler{
+    border: none;
+}
+   .navbar-toggler:focus{
+    outline: none;
+    
+}
+}
+
+@media Only screen and (max-width:580px){
+   
+    .nav-link.current-link{
+        border-bottom:2px solid #ffc107;
+        
+    }
+    .navbar-toggler{
+        border: none;
+    }
+    .navbar-toggler:focus{
+        outline: none;
+        
+    }
+    .heads a{
+        color: white !important;
+    }
+    .home{
+        position: relative;
+        z-index: -2;
+    }
+    
+   .right-bg{
+       
+    background-size: 250%;
+    position: absolute; 
+    top:40px;
+    z-index: -1;
+   
+}
+.about-img{
+    display: none;
+}
+.about-header{
+    font-size:  40px;
+    position: absolute;
+    opacity: 0.1;
+    top:0px;
+    left: 3px;
+
+}
+.Resume-header{
+    font-size:10vw;
+    position: absolute;
+    opacity: 0.1;
+    top:0px;
+    left:125px;
+    
+}
+.Skill-header{
+    font-size:10vw;
+    position: absolute;
+    opacity: 0.1;
+    top:0px;
+    left: 150px;
+}
+      
+   .left-bg{
+    margin-top: 250px;
+   }
+}
+.work-header{
+    font-size:7vw;
+    position: absolute;
+    opacity: 0.1;
+    top:0px;
+    left: 450px;
+}

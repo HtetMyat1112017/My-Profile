@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<div class="loader-con">
+  <div class="loader"></div>
+</div>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Vendor/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="Vendor/feather.css/feather.css">
+    <link rel="stylesheet" href="Vendor/animate_it/animate.css">
+   
+    <link rel="stylesheet" href="Css/style.css">
+    <style>
+     .loader-con{
+       display: flex;
+       background-color: black;
+       justify-content: center;
+       align-items: center;
+       height: 100vh;
+       width: 100%;
+       position:fixed;
+       z-index: 2000;
+     }
+          
+      .loader,
+      .loader:before,
+      .loader:after {
+        background: #f3bc08;
+        -webkit-animation: load1 1s infinite ease-in-out;
+        animation: load1 1s infinite ease-in-out;
+        width: 1em;
+        height: 4em;
+      }
+      .loader {
+        color: #f3bc08;
+        text-indent: -9999em;
+        margin: 88px auto;
+        position: relative;
+        font-size: 11px;
+        -webkit-transform: translateZ(0);
+        -ms-transform: translateZ(0);
+        transform: translateZ(0);
+        -webkit-animation-delay: -0.16s;
+        animation-delay: -0.16s;
+      }
+      .loader:before,
+      .loader:after {
+        position: absolute;
+        top: 0;
+        content: '';
+      }
+      .loader:before {
+        left: -1.5em;
+        -webkit-animation-delay: -0.32s;
+        animation-delay: -0.32s;
+      }
+      .loader:after {
+        left: 1.5em;
+      }
+      @-webkit-keyframes load1 {
+        0%,
+        80%,
+        100% {
+          box-shadow: 0 0;
+          height: 4em;
+        }
+        40% {
+          box-shadow: 0 -2em;
+          height: 5em;
+        }
+      }
+      @keyframes load1 {
+        0%,
+        80%,
+        100% {
+          box-shadow: 0 0;
+          height: 4em;
+        }
+        40% {
+          box-shadow: 0 -2em;
+          height: 5em;
+        }
+      }
+    </style>
+</head>
+<body>
+   <header class=" container-fluid heads wow animate__fadeInDown">
+       <div class="row">
+           <div class="container">
+               <div class="row ">
+                   <div class="col-12">
+                    <nav class="navbar navbar-expand-lg navbar-dark text-light d-flex justify-content-between  align-items-center">
+                        <a class="navbar-brand" href="index.html">Htet Myat</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                          <i class=" feather-menu menu-icon" style="font-size: 30px;"></i>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                          <ul class="navbar-nav">
+                            <li class="nav-item active">
+                              <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#Resume">Resume</a>
+                              </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#Service">Service</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#skill">Skill</a>
+                              </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Contact</a>
+                            </li>                   
+                          </ul>
+                        </div>
+                      </nav>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </header>
+   <section class=" container-fluid home " id="home">
+       <div class="row">
+           <div class="container ">
+              <div class="row min-vh-100 my-5 align-items-md-center justify-content-center flex-md-row mobile-row flex-column-reverse">
+                <div class="col-12 col-md-12 col-lg-6 ">
+                  
+                  <div class="text-white left-bg text-center text-md-left" >
+                    <p class="text-warning my-3 text-home wow animate__bounceIn ani-delay-1">HellO !</p>
+                     <h1 class=" my-3 wow animate__fadeInLeft ani-delay-2">I'm <span class=" text-warning "> Htet Myat </span></h1>
+                     <h5 class="my-3 text-white-80 wow animate__fadeInLeft ani-delay-2" style="word-spacing: 5px;">I'm a freelance Web Desginer</h5>
+                  </div>
+                  <div class="my-5 text-center text-md-left wow animate__fadeInTopLeft ani-delay-3">
+                    <a href="" class="btn btn-warning mr-3">Hire Me</a>
+                    <a href="" class="btn btn-outline-warning">My Work</a>
+                  </div>
+                </div>
+                <div class="col-12  col-md-12 col-lg-6 mt-md-5 right-bg vh-100 wow animate__fadeInRightBig ani-delay-1">
+                 
+                </div>
+              
+              </div>
+                    
+           </div>
+       </div>
+   </section>
+    <section class="container-fluid about " id="about">
+      <div class="row">
+        <div class="container">
+          <div class="row min-vh-100 align-items-md-center justify-content-center my-5">
+            <div class="col-12 col-md-6">
+              <div class="about-left wow animate__fadeInLeft ani-delay-1">
+                <img src="img/me_img.jpg" class="w-50 about-img" alt="">
+              </div>
+              
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="text-white">
+                <h1 class=" big about-header ">About</h1>
+                  <h1 class="mb-5 wow animate__bounceInDown ani-delay-2">About Me</h1>
+                  <p class="text-white-50 my-5 wow animate__bounceIn ani-delay-3" style="word-spacing: 3px;">
+                    I am an aspiring Web Developer. I am interested in Web Desgin. I am very passionate to learn new things in programming and make something out of it. I do all my projects with passion. If you think I'd be a great fit for your job, organization or company, please contact me.</p>
+                  <table class=" table table-borderless m-0 wow animate__bounceIn ani-delay-3">
+                    <tr>
+                      <td class=" text-white">Name :</td>
+                      <td class=" text-white-50">Htet Myat</td>
+                    </tr>
+                    <tr>
+                      <td class=" text-white"> Date Of Birth :</td>
+                      <td class=" text-white-50">6/5/2000</td>
+                    </tr>
+                    <tr>
+                      <td class=" text-white">Address :</td>
+                      <td class=" text-white-50">No-895/Kyaut sein (8)street/ (44) Quater/ North dagon Township/ Yangon</td>
+                    </tr>
+                    <tr>
+                      <td class=" text-white">Email :</td>
+                      <td class=" text-white-50">hm1028@gmail.com</td>
+                    </tr>
+                    <tr>
+                      <td class=" text-white">Phone :</td>
+                      <td class=" text-white-50">0978232312</td>
+                    </tr>
+                  </table>
+                  <p class="my-4 wow animate__bounceInRight ani-delay-1"><span class="text-warning mr-2" style="font-size: 20px;">10</span> project Complete</p>
+                  <div class="text-center text-md-left wow animate__bounceInRight ani-delay-1">
+                    <a href="downfile/htetmyat-web-developer.pdf" download="myfile" class="btn btn-warning text-uppercase">Download Cv</a>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class=" container-fluid Resume " id ="Resume"> 
+      <div class="row ">
+        <div class="container">
+          <div class="row min-vh-100 py-5 my-5">
+            <div class="col-12">
+              <div class="text-white text-center">
+                <h1 class="Resume-header ">Resume</h1>
+                  <h1 class="mb-5 wow animate__bounceInDown ani-delay-1">Resume</h1>
+                  <p class="text-white-50 my-5 wow animate__bounceIn ani-delay-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                    Voluptatibus exercitationem aliquam distinctio ipsum tempora ipsam quidem consectetur quae suscipit, 
+                    nihil natus eveniet recusandae praesentium nisi enim voluptatem sed veritatis cupiditate.
+                    </p>
+                </div>
+                 <div class="row ">
+                  <div class="col-12 col-md-6">
+                    <div class="card mb-4 wow animate__fadeInLeft ani-delay-2">
+                      <div class="card-body ">
+                        <h1 class="text-warning mb-3">2019-2020</h1>
+                        <h4 class="text-white mb-3">Second year Geography</h4>
+                        <p class="text-white-50 mb3">Dagon UNIVERSITY</p>
+                        <p class="text-white-50 mb-3" style="font-size: 14px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum vel 
+                          debitis impedit tempore itaque, est id consequatur assumenda inventore, hic perferendis placeat doloremque,
+                           necessitatibus non voluptatum numquam quasi praesentium accusantium.</p>
+                      </div> 
+                    </div>
+                    
+                    <div class="card mb-4 wow animate__fadeInLeft ani-delay-3">
+                      <div class="card-body ">
+                        <h1 class="text-warning mb-3">2017-2018</h1>
+                        <h4 class="text-white mb-3">Education</h4>
+                        <p class="text-white-50 mb3">B.E.S.H(4) North dagon</p>
+                        <p class="text-white-50 mb-3" style="font-size: 14px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum vel 
+                          debitis impedit tempore itaque, est id consequatur assumenda inventore, hic perferendis placeat doloremque,
+                           necessitatibus non voluptatum numquam quasi praesentium accusantium.</p>
+                      </div> 
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="card mb-4 wow animate__fadeInRight ani-delay-2">
+                      <div class="card-body ">
+                        <h1 class="text-warning mb-3">2020-2021</h1>
+                        <h4 class="text-white mb-3">Web Developement</h4>
+                        <p class="text-white-50 mb3">MMS IT </p>
+                        <p class="text-white-50 mb-3" style="font-size: 14px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum vel 
+                          debitis impedit tempore itaque, est id consequatur assumenda inventore, hic perferendis placeat doloremque,
+                           necessitatibus non voluptatum numquam quasi praesentium accusantium.</p>
+                      </div> 
+                    </div>
+                    <div class="card mb-4 wow animate__fadeInRight ani-delay-3">
+                      <div class="card-body ">
+                        <h1 class="text-warning mb-3">2019-2020</h1>
+                        <h4 class="text-white mb-3">Web Desgin</h4>
+                        <p class="text-white-50 mb3">MMS IT </p>
+                        <p class="text-white-50 mb-3" style="font-size: 14px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum vel 
+                          debitis impedit tempore itaque, est id consequatur assumenda inventore, hic perferendis placeat doloremque,
+                           necessitatibus non voluptatum numquam quasi praesentium accusantium.</p>
+                      </div> 
+                    </div>
+                  </div>
+                 
+                </div>
+                <div class="text-center my-5 wow animate__fadeInUp">
+                  <a href="" class="btn btn-warning text-uppercase">Download Cv</a>
+                </div>
+            </div>
+           
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class=" container-fluid services" id="Service">
+      <div class="row">
+        <div class="container">
+          <div class="row min-vh-100 my-5">
+            <div class="col-12">
+              <div class="text-white text-center">
+                <h1 class="Resume-header">services</h1>
+                  <h1 class="mb-5 wow animate__bounceInDown ani-delay-1">services</h1>
+                  <p class="text-white-50 my-5 animate__bounceIn ani-delay-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+              <div class="card p-3  services-card wow animate__flipInX ani-delay-1">
+                 <div class="card-body">
+                    <div class="text-white text-center">
+                      <i class="feather-monitor  text-warning my-3" style="font-size: 100px;"></i>
+                      <p class="my-3" style="word-spacing: 5px; letter-spacing: 2px;">Web Desgin</p>
+                      <hr class="bg-warning w-25 mx-auto my-3">
+                    
+                    </div>
+                 </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+              <div class="card p-3 services-card  wow animate__flipInX ani-delay-1">
+                 <div class="card-body">
+                    <div class="text-white text-center">
+                      <i class="feather-settings  text-warning my-3" style="font-size: 100px;"></i>
+                      <p class="my-3" style="word-spacing: 5px; letter-spacing: 2px;">Web Developement</p>
+                      <hr class="bg-warning w-25 mx-auto my-3">
+                    
+                    </div>
+                 </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+              <div class="card p-3 services-card  wow animate__flipInX ani-delay-1">
+                 <div class="card-body">
+                    <div class="text-white text-center">
+                      <i class="feather-image  text-warning my-3" style="font-size: 100px;"></i>
+                      <p class="my-3" style="word-spacing: 5px; letter-spacing: 2px;">PhotoShop</p>
+                      <hr class="bg-warning w-25 mx-auto my-3">
+                    
+                    </div>
+                 </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+              <div class="card p-3 services-card  wow animate__flipInX ani-delay-1">
+                 <div class="card-body">
+                    <div class="text-white text-center">
+                      <i class="feather-smartphone  text-warning my-3" style="font-size: 100px;"></i>
+                      <p class="my-3" style="word-spacing: 5px; letter-spacing: 2px;">App Developement</p>
+                      <hr class="bg-warning w-25 mx-auto my-3">
+                    
+                    </div>
+                 </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+              <div class="card p-3 services-card  wow animate__flipInX ani-delay-1">
+                 <div class="card-body">
+                    <div class="text-white text-center">
+                      <i class="feather-video  text-warning my-3" style="font-size: 100px;"></i>
+                      <p class="my-3" style="word-spacing: 5px; letter-spacing: 2px;">Animation</p>
+                      <hr class="bg-warning w-25 mx-auto my-3">
+                    
+                    </div>
+                 </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+              <div class="card p-3 services-card  wow animate__flipInX ani-delay-1">
+                 <div class="card-body">
+                    <div class="text-white text-center">
+                      <i class="feather-wifi  text-warning my-3" style="font-size: 100px;"></i>
+                      <p class="my-3" style="word-spacing: 5px; letter-spacing: 2px;">Hosting & Domain</p>
+                      <hr class="bg-warning w-25 mx-auto my-3">
+                    
+                    </div>
+                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container-fluid skill" id="skill">
+      <div class="row">
+        <div class="container">
+          <div class="row min-vh-50 my-5 p-5">
+            <div class="col-12">
+              <div class="text-white text-center">
+                <h1 class="Skill-header">Skill</h1>
+                  <h1 class="mb-5 wow animate__bounceInDown ani-delay-1">Skill</h1>
+                  <p class="text-white-50 wow animate__bounceIn ani-delay-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                   
+                    </p>
+                </div>
+            
+                <div class="row my-4">
+                
+                <div class="col-12 col-md-6 mb-3">
+                  <div class="wow animate__fadeInLeft ani-delay-2">
+                    <div class="text-warning  d-flex justify-content-between" style="width: 85%;">
+                      <p>Html</p>
+                      <p>85%</p>
+                      
+                    </div>
+                    <div class="progress bg-dark  mb-2">
+                      <div class="progress-bar bg-warning" role="progressbar" style="width: 85%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6  mb-3">
+                  <div class="wow animate__fadeInRight ani-delay-2">
+                    <div class="text-warning  d-flex justify-content-between" style="width: 60%;">
+                      <p>JavaScript</p>
+                      <p>60%</p>
+                      
+                    </div>
+                    <div class="progress bg-dark  mb-2">
+                      <div class="progress-bar bg-warning" role="progressbar" style="width: 60%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6  mb-3">
+                  <div class="wow animate__fadeInLeft ani-delay-2">
+                    <div class="text-warning  d-flex justify-content-between" style="width: 40%;">
+                      <p>PhotoShop</p>
+                      <p>40%</p>
+                      
+                    </div>
+                    <div class="progress bg-dark  mb-2">
+                      <div class="progress-bar bg-warning" role="progressbar" style="width: 40%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6  mb-3">
+                  <div class="wow animate__fadeInRight ani-delay-2">
+                    <div class="text-warning w-75 d-flex justify-content-between">
+                      <p>Css</p>
+                      <p>75%</p>
+                      
+                    </div>
+                    <div class="progress bg-dark  mb-2">
+                      <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6  mb-3">
+                  <div class="wow animate__fadeInLeft ani-delay-2">
+                    <div class="text-warning  d-flex justify-content-between" style="width: 45%;">
+                      <p>Jquary</p>
+                      <p>45%</p>
+                      
+                    </div>
+                    <div class="progress bg-dark  mb-2">
+                      <div class="progress-bar bg-warning" role="progressbar" style="width: 45%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6  mb-3">
+                  <div class="wow animate__fadeInRight ani-delay-2">
+                    <div class="text-warning  d-flex justify-content-between" style="width: 30%;">
+                      <p>WordPress</p>
+                      <p>30%</p>
+                      
+                    </div>
+                    <div class="progress bg-dark  mb-2">
+                      <div class="progress-bar bg-warning" role="progressbar" style="width: 30%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+     
+    </section>
+    <!-- <section class="container-fluid work" id="work">
+      <div class="row">
+        <div class="container">
+          <div class="row ">
+            <div class="col-12">
+                <div class="text-white text-center">
+                  <h1 class="work-header">Work</h1>
+                  <h1 class="mb-5 wow animate__bounceInDown ani-delay-1">Work</h1>
+                </div>
+            </div>
+            <div class="col-12">
+              <div class="">
+               
+               
+
+              </div>
+            </div>     
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <section class="container-fluid contact" id="contact">
+      <div class="row">
+        <div class="container">
+          <div class="row min-vh-100 my-5">
+            <div class="col-12">
+              <div class="text-white text-center">
+                <h1 class="Resume-header">Contact</h1>
+                  <h1 class="mb-5 wow animate__bounceInDown ani-delay-1">Contact</h1>
+                  <p class="text-white-50 wow animate__bounceIn ani-delay-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+              </div>
+            
+              <div class="col-12 col-md-6">
+                <div class="d-flex  align-items-center my-5 wow animate__fadeInLeftBig ani-delay-2">
+                  <i class="feather-phone mr-3 text-warning" style="font-size: 30px;"></i>
+                 <a href="#" class="text-white">09779224852</a>
+                </div>
+                <div class="d-flex  align-items-center my-5 wow animate__fadeInLeftBig ani-delay-2">
+                  <i class="feather-mail mr-3 text-warning" style="font-size: 30px;"></i>
+                  <a href="#" class="text-white">hm1028@gmail.com</a>
+                </div>
+                <div class="d-flex  align-items-center my-5 wow animate__fadeInLeftBig ani-delay-2">
+                  <i class="feather-facebook mr-3 text-warning" style="font-size: 30px;"></i>
+                  <a href="#" class="text-white">HtetMyat</a>
+                </div>
+                <div class="d-flex  align-items-center my-5 wow animate__fadeInLeftBig ani-delay-2">
+                  <i class="feather-phone mr-3 text-warning " style="font-size: 30px;"></i>
+                  <a href="#" class="text-white">No-895/Kyaut sein (8)street/ (44) Quater/ North dagon Township/ Yangon</a>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <form action="" >
+                  <div class="form-group wow animate__fadeInRightBig ani-delay-2" >
+                    
+                    <input type="text" name="" id="" class="w-100 form-control my-5" placeholder="Name">
+                    <input type="text" name="" id="" class="w-100 form-control my-5" placeholder="Phone">
+                    <textarea name="" id="" cols="30" rows="5" class="form-control my-5" placeholder="Message"></textarea>
+                    <a href="" class="btn btn-warning">Sent Message</a>
+                  </div>
+                </form>
+              </div>
+              <div class="col-12">
+                <div class="text-center text-white mt-5 wow animate__bounceIn ani-delay-1">
+                  <p class=" text-white-50">Copy Right © 2021 HtetMyat, All Rights Reserved.</p>
+                  <div class="mt-5 p-2 wow animate__bounceIn ani-delay-2" >
+                    <a href="" class=" text-primary p-2">
+                      <i class="feather-facebook bg-warning p-2" style="font-size: 20px; border-radius: 50%; "></i>
+                    </a> 
+                    <a href="" class=" text-primary p-2">
+                      <i class="feather-twitter bg-warning p-2" style="font-size: 20px; border-radius: 50%; "></i>
+                    </a> 
+                    <a href="" class=" text-danger p-2">
+                      <i class="feather-instagram bg-warning p-2" style="font-size: 20px; border-radius: 50%; "></i>
+                    </a> 
+                  </div>
+                </div>
+              </div>
+                
+            </div>
+            
+        </div>
+      </div>
+     
+    </section>
+    <script src="Vendor/Jquery/Jquery.js"></script>
+    <script src="Vendor/way_point/jquery.waypoints.js"></script>
+    <script src="Vendor/bootstrap/js/bootstrap.js"></script>
+    <script src="Vendor/wow/wow.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+   
+      wow = new WOW(
+        {
+        boxClass:     'wow',      // default
+        animateClass: 'animate__animated', // default
+        offset:       0,          // default
+        mobile:       true,       // default
+        live:         true        // default
+      }
+      )
+      wow.init();
+      $('.carousel').carousel({
+      interval: 2000
+      });
+    </script>
+    
+</body>
+</html>
